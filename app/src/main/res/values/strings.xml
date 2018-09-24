@@ -6,6 +6,11 @@
   <string name="open">開啟</string>
   <string name="close">關閉</string>
   
+  <string name="action_backup">備份</string>
+  <string name="action_recovery">匯入</string>
+  <string name="action_reset">重置初始清單</string>
+  <string name="action_settings">設定</string>
+  
   <string name="menu_list">檢視清單</string>
   <string name="menu_drawer">抽東西ㄘ</string>
   
