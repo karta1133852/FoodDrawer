@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     final DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
     NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
   
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     // 用toolbar做為APP的ActionBar
     setSupportActionBar(toolbar);
   
@@ -45,9 +45,15 @@ public class MainActivity extends AppCompatActivity {
       
         // 依照id判斷點了哪個項目並做相應事件
         if (id == R.id.menu_drawer) {
+          toolbar.setTitle("抽東西ㄘ");
+          DrawFragment drawFragment = new DrawFragment();
+          getSupportFragmentManager().beginTransaction().replace(R.id.fragment, drawFragment).commit();
           return true;
         }
         else if (id == R.id.menu_list) {
+          toolbar.setTitle("清單");
+          DataListFragment dataListFragment = new DataListFragment();
+          getSupportFragmentManager().beginTransaction().replace(R.id.fragment, dataListFragment).commit();
           return true;
         }
         return false;

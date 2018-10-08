@@ -14,4 +14,9 @@
   <string name="menu_list">檢視清單</string>
   <string name="menu_drawer">抽東西ㄘ</string>
   
+  <string name="draw_button">點我ㄘ啥</string>
+  
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
